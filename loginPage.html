@@ -1,0 +1,287 @@
+<html>
+    <head>
+        <meta content="width=device-width, initial-scale=1" name="viewport" />
+        <title>Real Fresh</title>
+        <link href="http://localhost/realfresh/loginStyles.css" rel="stylesheet">
+        <link rel="icon" href="http://localhost/realfresh/img/riderlogo.png">
+        <link href="https://fonts.googleapis.com/css2?family=Josefin+Sans&display=swap" rel="stylesheet">
+        <link rel="stylesheet" href="bower_components/aos/dist/aos.css">
+        <script src="bower_components/aos/dist/aos.js"></script>
+        <link href="https://cdn.rawgit.com/michalsnik/aos/2.1.1/dist/aos.css" rel="stylesheet">
+        <script src="https://cdn.rawgit.com/michalsnik/aos/2.1.1/dist/aos.js"></script>
+    </head>
+    <body>
+        <button class = "floatingBtn" id = "floatingBtn" onclick="gotoTop()">&#8593;</button>
+
+        <div class = "navBar">
+            <div class = "navBarLogo">
+            </div>
+            <div class = "navBarIcons">
+                <ul>
+                    <div class = "icons">
+                        <a href = "#"><li>About</li></a>
+                        <a href = "#"><li>Login</li></a>
+                    </div>
+                </ul>
+            </div>
+            <div class = "burger" onclick="toggleSideNavBar()" id = "menuIcon">
+                &#9776;
+            </div>
+        </div>
+        <div class = "sideNavBar" id = "sideNavBar" style = "transform: translateX(100%);">
+            <ul>
+                <li>About</li>
+                <li>Login</li>
+            </ul>
+        </div>
+
+        <div class = "introContainer">
+            <div class = "introContentContainer">
+                <span class = "introHeading">Get Meat delivered at your door step</span><br><br>
+                <span class = "introContent">
+                    We deliver fresh meat from top stores around the city<br>
+                </span><br>
+                <div class = "introExtras">
+                    <button class = "extraBtn" onclick="scrollPage('1000')">Know More</button>
+                    <button class = "extraBtn" style = "margin-left: 4vw;" onclick="scrollPage('1650')">Contact</button>
+                </div>
+            </div>
+        </div>
+
+        <div class = "featuresContainer">
+            <div class = "featuresBlock" style = "border-top: solid 10px #00cc7a; border-bottom: solid 3px #00cc7a;">
+                <div style = "height: 50%; width: 100%; text-align: center;  display: flex; justify-content: center; align-items: center;">
+                    <img src = "http://localhost/realfresh/img/icon-clock.png" width = 115 height = 115 class = "infoimg">
+                </div>
+                <div style = "height: 30%; width: 100%;  text-align: center; display: flex; justify-content: center;">
+                    <div style = "height: 90%; width: 90%; margin-top: 20px;">
+                        <span style = "font-family: 'Josefin Sans', sans-serif; font-size: 2.6vh;">
+                            Schedule your orders and get it delivers when you want
+                        </span>
+                    </div>
+                </div>
+            </div>
+            <div class = "featuresBlock" style = "border-top: solid 10px #0080ff; border-bottom: solid 3px #0080ff;">
+                <div style = "height: 50%; width: 100%; text-align: center; display: flex; justify-content: center; align-items: center;">
+                    <img src = "http://localhost/realfresh/img/icon-box.png" width = 130 height = 125 class = "infoimg">
+                </div>
+                <div style = "height: 50%; width: 100%;  text-align: center; display: flex; justify-content: center;">
+                    <div style = "height: 90%; width: 90%; margin-top: 20px;">
+                        <span style = "font-family: 'Josefin Sans', sans-serif; font-size: 2.6vh;">
+                            Order for yourself with no restrictions on minimum order
+                        </span>
+                    </div>
+                </div>
+            </div>
+            <div class = "featuresBlock" style = "border-top: solid 10px #ff0066; border-bottom: solid 3px #ff0066;">
+                <div style = "height: 50%; width: 100%; text-align: center; display: flex; justify-content: center; align-items: center;">
+                    <img src = "http://localhost/realfresh/img/icon-map.png" width = 110 height = 105 class = "infoimg">
+                </div>
+                <div style = "height: 50%; width: 100%;  text-align: center; display: flex; justify-content: center;">
+                    <div style = "height: 90%; width: 90%; margin-top: 20px;">
+                        <span style = "font-family: 'Josefin Sans', sans-serif; font-size: 2.6vh;">
+                            Track your orders right from the store to your doorstep
+                        </span>
+                    </div>
+                </div>
+            </div>
+            <div class = "featuresBlockSmall" style = "background-color: #00cc7a">
+                <div style = "display: flex; justify-content: space-around; align-items: center; height: 60%;">
+                    <img src = "http://localhost/realfresh/img/icon-clock.png" width = 115 height = 115 class = "infoimg">
+                </div>
+                <div style = "height: 30%; width: 100%;  text-align: center; display: flex; justify-content: center;">
+                    <div style = "height: 90%; width: 90%; margin-top: 20px;">
+                        <span style = "font-family: 'Josefin Sans', sans-serif; font-size: 2.8vh;">
+                            Track your orders right from the store to your doorstep
+                        </span>
+                    </div>
+                </div>
+            </div>
+            <div class = "featuresBlockSmall" style = "background-color: #00cc7a">
+                <div style = "height: 50%; width: 100%; text-align: center;  display: flex; justify-content: center; align-items: center;">
+                    <img src = "http://localhost/realfresh/img/icon-box.png" width = 115 height = 115 class = "infoimg">
+                </div>
+                <div style = "height: 30%; width: 100%;  text-align: center; display: flex; justify-content: center;">
+                    <div style = "height: 90%; width: 90%; margin-top: 20px;">
+                        <span style = "font-family: 'Josefin Sans', sans-serif; font-size: 2.8vh;">
+                            Schedule your orders and get it delivers when you want
+                        </span>
+                    </div>
+                </div>
+            </div>
+            <div class = "featuresBlockSmall" style = "background-color: #00cc7a">
+            <div style = "height: 50%; width: 100%; text-align: center; display: flex; justify-content: center; align-items: center;">
+                    <img src = "http://localhost/realfresh/img/icon-map.png" width = 110 height = 105 class = "infoimg">
+                </div>
+                <div style = "height: 30%; width: 100%;  text-align: center; display: flex; justify-content: center;">
+                    <div style = "height: 90%; width: 90%; margin-top: 20px;">
+                        <span style = "font-family: 'Josefin Sans', sans-serif; font-size: 2.8vh;">
+                            Track your orders right from the store to your doorstep
+                        </span>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <div class = "infoContainer">
+            <div class = "photoBlock" id = "photoBlock">
+                <div class = "photo">
+                    <img src = "http://localhost/realfresh/img/eggBackground1.png" id = "slide1">
+                    <img src = "http://localhost/realfresh/img/eggBackground2.png" id = "slide2">
+                    <img src = "http://localhost/realfresh/img/app_logo.png" id = "slide3">
+                    <img src = "http://localhost/realfresh/img/slideShow1.png" id = "slide4">
+                    <img src = "http://localhost/realfresh/img/slideShow2.png" id = "slide5">
+                    <img src = "http://localhost/realfresh/img/slideShow6.png" id = "slide6">
+                    <img src = "http://localhost/realfresh/img/slideShow7.png" id = "slide7">
+                    <img src = "http://localhost/realfresh/img/slideShow8.png" id = "slide8">
+                </div>
+            </div>
+            <div class="slideNavigation">
+                <div class="slideBtnContainer">
+                    <div class = "slideBtn" onclick="slide(1)" id = "slideBtn1" style = "background-color: #ff751a;"></div>
+                    <div class = "slideBtn" onclick="slide(2)" id = "slideBtn2"></div>
+                    <div class = "slideBtn" onclick="slide(3)" id = "slideBtn3"></div>
+                </div>
+            </div>
+        </div>
+
+        <div class = "footerContainer">
+            <div class = "contacts">
+                <div class = "contactLogo">
+                    <div style = "height: 90px; width: 100%; background-image: url('http://localhost/realfresh/img/app_logo.png'); background-size: 100% 100%; display: flex; justify-content: flex-end; align-items: end;">
+                    </div>
+                </div>
+                <div class = "contactBlock">
+                    <span style = "color: #ff751a; font-size: 30px; font-family: 'Josefin Sans', sans-serif;">Contact</span>
+                    <br><br>&ensp;<img src = "http://localhost/realfresh/img/icon-phone.png" style = "vertical-align: bottom;" >
+                        <span style = "font-size: 17px;"> +91 99999 99999</span>
+                    <span style="font-size: 2px;"><br><br><br><br></span>
+                    &ensp;<img src = "http://localhost/realfresh/img/icon-mail.png" style = "vertical-align: bottom;" >
+                    <a href = "mailto:sreenu14m@gmail.com">   
+                    <span style = "font-size: 17px;"> contact@realfresh.com</span></a>
+                </div>
+                <div class = "contactBlock">
+                    <span style = "color: #ff751a; font-size: 30px; font-family: 'Josefin Sans', sans-serif;">Information</span>
+                    <br><br>
+                    <a href = ""><span style = "font-size: 18px;">About Us</span></a><br>
+                    <span style="font-size: 2px;"><br><br><br><br></span>
+                    <a href = ""><span style = "font-size: 18px;">Updates</span></a><br>
+                    <span style="font-size: 2px;"><br><br><br><br></span>
+                    <a href = ""><span style = "font-size: 18px;">Coupons</span></a><br>
+                    <span style="font-size: 2px;"><br><br><br><br></span>
+                    <a href = ""><span style = "font-size: 18px;">Services</span></a><br>
+                    <span style="font-size: 2px;"><br><br><br><br></span>
+                </div>
+                <div class = "contactBlock">
+                    <span style = "color: #ff751a; font-size: 30px; font-family: 'Josefin Sans', sans-serif;">More</span>
+                    <br><br>
+                    <a href = ""><span style = "font-size: 18px;">Terms & Conditions</span></a><br>
+                    <span style="font-size: 2px;"><br><br><br><br></span>
+                    <a href = ""><span style = "font-size: 18px;">Privacy Policy</span></a><br>
+                    <span style="font-size: 2px;"><br><br><br><br></span>
+                    <a href = ""><span style = "font-size: 18px;">Help & Support</span></a><br>
+                    <span style="font-size: 2px;"><br><br><br><br></span>
+                </div>
+            </div>
+            <div class = "contactIcons">
+                <a href = ""><img src = "http://localhost/realfresh/img/icon-facebook.png"></a>
+                <a href = "" style = "margin-left: 10px;"><img src = "http://localhost/realfresh/img/icon-googleplus.png"></a>
+                <a href = "" style = "margin-left: 12px;"><img src = "http://localhost/realfresh/img/icon-instagram.png"></a>
+                <a href = "" style = "margin-left: 14px;"><img src = "http://localhost/realfresh/img/icon-twitter.png"></a>
+            </div>
+            <div class = "copyright">
+                    2020 &copy; companyLtd. All Rights reserved
+            </div>
+        </div>
+
+        <script>
+            function toggleSideNavBar(){
+                btn = document.getElementById("menuIcon");
+                x = document.getElementById("sideNavBar");
+                if(x.style.transform == "translateX(100%)"){
+                    x.style.transform = "translateX(0%)";
+                    btn.style.fontWeight = "bold";
+                    btn.innerHTML = "&#9747;";
+                    x.style.boxShadow = "-5px 5px 10px #bbb";
+                }else{
+                    x.style.transform = "translateX(100%)";
+                    btn.style.fontWeight = "normal";
+                    btn.innerHTML = "&#9776;";
+                    x.style.boxShadow = "0px 0px 0px #888";
+                }
+            }
+
+            function showSlides(n) {
+                var i;
+                var slides = document.getElementsByClassName("mySlides");
+                if (n > slides.length) {
+                    slideIndex = 1
+                }
+                if (n < 1) {
+                    slideIndex = slides.length
+                }
+                for (i = 0; i < slides.length; i++) {
+                    slides[i].style.display = "none";
+                }
+                slides[slideIndex-1].style.display = "block";
+            }
+
+            function slide(num){
+                x = document.getElementById("photoBlock");
+                if(num == 1){
+                    x.style.transform = "translateX(0%)";
+                    document.getElementById("slideBtn1").style.backgroundColor = "#ff751a";
+                    document.getElementById("slideBtn2").style.backgroundColor = "transparent";
+                    document.getElementById("slideBtn3").style.backgroundColor = "transparent";
+                }else if(num == 2){
+                    x.style.transform = "translateX(-100%)";
+                    document.getElementById("slideBtn1").style.backgroundColor = "transparent";
+                    document.getElementById("slideBtn2").style.backgroundColor = "#ff751a";
+                    document.getElementById("slideBtn3").style.backgroundColor = "transparent";
+                }else if(num == 3){
+                    x.style.transform = "translateX(-200%)";
+                    document.getElementById("slideBtn1").style.backgroundColor = "transparent";
+                    document.getElementById("slideBtn2").style.backgroundColor = "transparent";
+                    document.getElementById("slideBtn3").style.backgroundColor = "#ff751a";
+                }
+            }
+
+            setInterval("slideAuto()", 5000);
+            function slideAuto(){
+                x = document.getElementById("photoBlock");
+                if(x.style.transform == "translateX(0%)"){
+                    x.style.transform = "translateX(-100%)";
+                    document.getElementById("slideBtn1").style.backgroundColor = "transparent";
+                    document.getElementById("slideBtn2").style.backgroundColor = "#ff751a";
+                    document.getElementById("slideBtn3").style.backgroundColor = "transparent";
+                }else if(x.style.transform == "translateX(-100%)"){
+                    x.style.transform = "translateX(-200%)";
+                    document.getElementById("slideBtn1").style.backgroundColor = "transparent";
+                    document.getElementById("slideBtn2").style.backgroundColor = "transparent";
+                    document.getElementById("slideBtn3").style.backgroundColor = "#ff751a";
+                }else if(x.style.transform == "translateX(-200%)"){
+                    x.style.transform = "translateX(0%)";
+                    document.getElementById("slideBtn1").style.backgroundColor = "#ff751a";
+                    document.getElementById("slideBtn2").style.backgroundColor = "transparent";
+                    document.getElementById("slideBtn3").style.backgroundColor = "transparent";
+                }
+            }
+
+            window.onscroll = function() {scrollFunc()};
+            function scrollFunc(){
+                if(window.pageYOffset > 110){
+                    document.getElementById("floatingBtn").style.display = "block";
+                }else{
+                    document.getElementById("floatingBtn").style.display = "none";
+                }
+            }
+
+            function gotoTop(){
+                window.scrollTo(0, 0);
+            }
+            function scrollPage(x) {    
+                window.scrollTo(0, x);
+            }
+        </script>
+    </body>
+</html>

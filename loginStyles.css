@@ -1,0 +1,586 @@
+html, body{
+    overflow-x: hidden;
+    width: 100%;
+    padding: 0px;
+    margin: 0px;
+}
+
+.floatingBtn{
+    position: fixed;
+    height: 35px;
+    width: 35px;
+    bottom: 60;
+    right: 30;
+    display: none;
+    z-index: 100;
+    border-radius: 50%;
+    border: none;
+    outline: none;
+    background-color: #ff751a;
+    color: white;
+    font-size: 20px;
+}
+
+.navBar{
+    height: 8vh;
+    width: 100%;
+    background-color: white;
+    position: fixed;
+    top: 0;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    border-bottom: solid 1px #888;
+    top: 0;
+    padding: 5px;
+    z-index: 100;
+}
+
+.navBarLogo{
+    width: 20%;
+    min-width: 8vw;
+    height: inherit;
+    background-image: url('http://localhost/realfresh/img/app_logo.png');
+    background-size: 100% 100%;
+}
+
+.navBarIcons{
+    width: 17%;
+    height: inherit;
+    right: 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding-right: 10px;
+}
+
+.icons{
+    display: flex;
+    width: 100%;
+    justify-content: space-around;
+}
+
+.navBarIcons ul{
+    width: 100%;
+    display: flex;
+    height: 100%;
+    justify-content: space-around;
+    align-items: center;
+}
+
+a{
+    text-decoration: none;
+    color: black;
+}
+
+.navBarIcons li{
+    list-style: none;
+    font-family: 'Josefin Sans';
+    font-size: 3vh;
+}
+
+.navBarIcons li:hover{
+    color: #1a44ff;
+}
+
+.burger{
+    width: 15%;
+    display: none;
+    font-size: 3.5vh;
+    transition: 500ms;
+    background-color: transparent;
+}
+
+.sideNavBar{
+    top: 9.5vh;
+    right: 0;
+    position: fixed;
+    width: 50%;
+    height: 20vh;
+    border: solid 1px #fff;
+    display: none;
+    background-color: white;
+    z-index: 20;
+    flex-direction: column;
+    justify-content: space-around;
+    align-items: center;
+    transition: 500ms;
+    padding: 10px;
+}
+
+.sideNavBar ul{
+    font-family: 'Josefin Sans';
+    font-size: 3.5vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    align-items: flex-start;
+    height: 20vh;
+    width: fit-content;
+    padding: 0;
+}
+
+.sideNavBar ul li{
+    list-style: none;
+    list-style-type: none;
+}
+
+.sideNavBar ul li:hover{
+    color: #1a44ff;
+}
+
+.introContainer{
+    margin-top: 9vh;
+    width: 100%;
+    height: 90%;
+    background: url('http://localhost/realfresh/img/chickenBackground1.jpg');
+    background-repeat: no-repeat;
+    background-size: 100% 100%;
+    background-position: center center;
+    display: flex;
+    align-items: center;
+    box-shadow: 0px 3px 10px #555;
+    z-index: 60;
+}
+
+.introContentContainer{
+    font-family: 'Josefin Sans';
+    height: 90%;
+    width: 60%;
+    min-width: 65vw;
+    z-index: 10;
+    text-align: center;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.introHeading{
+    color: #ff751a;
+    font-size: 5.5vh;
+    font-weight:bold;
+    width: 100%;
+    height: 8vh;
+    display: flex;
+    justify-content: space-around;
+    letter-spacing: 1px;    
+}
+
+.introContent{
+    height: 30vh;
+    font-size: 3vh;
+    color: white;
+    padding: 10px;
+    width: 70%;
+}
+
+.introExtras{
+    width: 100%;
+    height: fit-content;
+    display: flex;
+    justify-content: center;
+}
+
+.extraBtn{
+    background-color: #1a44ff;
+    height: 7vh;
+    width: 13vw;
+    min-width: 110px;
+    border: none;
+    color: white;
+    font-family: 'Josefin Sans';
+    font-size: 2.6vh;
+    padding: 10px;
+}
+
+.featuresContainer{
+    height: 70%;
+    width: 100%;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    min-height: fit-content;
+    min-height: fit-content;
+    z-index: 50;
+}
+
+.featuresBlock{
+    width: 23vw;
+    min-width: 20vw;
+    max-width: 230px;
+    height: 38vh;
+    border: solid 1px #bbb;
+    border-radius: 10px;
+    padding: 10px;
+    background-color: white;
+}
+
+.featuresBlockSmall{
+    width: 100%;
+    height: 33.3%;
+    min-height: 165px;
+    padding: 5px;
+    color: #222;
+    display: none;
+    flex-direction: column;
+    justify-content: center;    
+    align-items: center;
+}
+
+.infoContainer{
+    width: 100%;
+    height: 90%;
+    display: hidden;
+    box-shadow: 0px 3px 10px #555;
+}
+
+.photoBlock{
+    width: 100%;
+    height: 96%;
+    display: flex;
+    transition: 500ms;
+}
+
+.photo{
+    width: 100%;
+    height: 100%;
+    display: flex;
+}
+
+.photo img{
+    width: 100%;
+    height: 100%;
+}
+
+#slide1, #slide2, #slide3{
+    display: block;
+}
+
+#slide4, #slide5, #slide6, #slide7, #slide8{
+    display: none;
+}
+
+.slideNavigation{
+    width: 100%;
+    height: 4%;
+    z-index: 30;
+    background-color: #222;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.slideBtnContainer{
+    height: 100%;
+    width: 12vw;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.slideBtn{
+    width: 2.8vw;
+    height: 2vh;
+    min-width: 30px;
+    border: solid 1px #aaa;
+    background-color: transparent;
+    outline: none;
+    transition: 500ms;
+}
+
+.footerContainer{
+    margin-top: 100px;
+    height: 350px;
+    background-color: #222;
+    bottom: 0;
+    width: 100%;
+    overflow: hidden;
+}
+
+.contacts{
+    display: flex;
+    border-bottom: solid 1px #ff751a;
+    height: 85%;
+    width: 100%;
+    justify-content: space-around;
+    align-items: center;
+}
+
+.contactLogo{
+    height: 230px;
+    width: 300px;
+    font-family: 'Josefin Sans', sans-serif;
+    color: white;
+    text-align: center;
+}
+
+.contactBlock{
+    height: 32vh;
+    width: 33vw;
+    font-family: 'Josefin Sans', sans-serif;
+    color: white;
+    text-align: center;
+}
+
+.contactBlock a{
+    color: white;
+    text-decoration: none;
+}
+
+.copyright{
+    font-size: 16px;
+    color: white;
+    margin-top: -23px;
+    text-align: right;
+    margin-right: 5px;
+    font-family: 'Josefin Sans', sans-serif;
+}
+
+.contactIcons{
+    height: 15%;
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+@media screen and (max-width: 1300px){
+    html, body{
+        width: 100%;
+    }
+    .navBarLogo{
+        width: 30vw;
+    }
+    .navBarIcons{
+        width: 40%;
+    }
+    .introContainer{
+        background: url('http://localhost/realfresh/img/chickenBackground1-small.png');
+        background-repeat: no-repeat;
+        background-size: 100% 100%;
+    }
+}
+
+@media screen and (max-width: 1200px){
+    .navBarIcons{
+        width: 40%;
+    }
+    .introContainer{
+        background: url('http://localhost/realfresh/img/chickenBackground1-small2.png');
+        background-repeat: no-repeat;
+        background-size: 100% 100%;
+    }
+    .introHeading{
+        font-size: 5vh;
+    }
+    .introContent{
+        font-size: 2.5vh;
+    }
+}
+
+@media screen and (max-width: 1100px){
+    .navBarIcons{
+        width: 40%;
+    }
+    .introContainer{
+        background: white;
+        align-items: flex-start;
+        height: 80%;
+    }
+    .introContentContainer{
+        width: 100%;
+        height: 98%;
+        padding-top: 10px;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+    .introHeading{
+        font-size: 5vh;
+        height: 10vh;
+    }
+    .introContent{
+        font-size: 2.5vh;
+        color: black;
+        height: 17vh;
+        width: 60vw;
+    }
+    .introExtras{
+        width: 50%;
+        height: 10vh;
+    }
+    .extraBtn{
+        width: 220px;
+    }
+    .featuresContainer{
+        background-color: #eee;
+    }
+    .featuresBlock{
+        width: 500px;
+        max-width: 290px;
+        padding: 5px;
+    }
+    .contactBlock{
+        height: 80%;
+    }
+    .contactLogo{
+        display: none;
+    }
+    #slide1, #slide2, #slide3{
+        display: none;
+    }
+    #slide4, #slide5{
+        display: block;
+    }
+    .introContainer{
+        height: 80%;
+    }
+    .contactLogo{
+        display: none;
+    }
+}
+
+@media screen and (max-width: 870px){
+    html, body{
+        width: 100%;
+    }
+    .navBarLogo{
+        width: 50vw;
+    }
+    .navBarIcons{
+        display: none;
+    }
+    .burger{
+        display: block;
+    }
+    .sideNavBar{
+        display: flex;
+    }
+    .introContainer{
+        height: fit-content;
+        min-height: 80%;
+    }
+    .introHeading{
+        height: fit-content;
+        padding: 10px;
+    }
+    .introContent{
+        height: fit-content;
+        min-height: 15vh;
+        width: 80%;
+        color: black;
+        font-size: 2.8vh;
+    }
+    .featuresContainer{
+        height: 85%;
+        display: block;
+    }
+    .featuresBlock{
+        display: none;
+    }
+    .featuresBlockSmall{
+        display: flex;
+    }
+    .infoContainer{
+        margin-top: 30px;
+    }
+    #slide4, #slide5{
+        display: none;
+    }
+    #slide6, #slide7, #slide8{
+        display: block;
+    }
+    .slideBtnContainer{
+        width: 80px;
+    }
+    .slideBtn{
+        border-radius: 10%;
+        width: 15px;
+        min-width: 0px;
+        height: 8px;
+    }
+    .infoContainer{
+        height: 75%;
+    }
+    .contactLogo{
+        display: none;
+    }
+    .contacts{
+        height: 75%;
+    }
+    .contactIcons{
+        height: 18%;
+    }
+    .copyright{
+        text-align: center;
+        font-size: 14px;
+        margin-top: auto;
+    }
+    .floatingBtn{
+        bottom: 90;
+        right: 10;
+    }
+}
+
+@media screen and (max-width: 680px){
+    .introContainer{
+        height: 80%;
+    }
+    .footerContainer{
+        display: block;
+        height: 100%;
+    }
+    .contacts{
+        display: block;
+        height: 87%;
+    }
+    .contactBlock{
+        padding-top: 20px;
+        padding-bottom: 20px;
+        height: fit-content;
+        width: 100%;
+    }
+    .contactIcons{
+        height: 9.5%;
+    }
+    .copyright{
+        text-align: center;
+        margin-top: auto;
+        font-size: 14px;
+    }
+}
+
+@media screen and (max-width: 550px){
+    .slideBtn{
+        border-radius: 50%;
+        height: 6px;
+        width: 6px;
+    }
+    .footerContainer{
+        height: auto;
+    }
+    .contacts{
+        height: 90%;
+        min-height: fit-content;
+    }
+    .contactIcons{
+        min-height: fit-content;
+    }
+    .copyright{
+        padding-bottom: 5px;
+    }
+}
+
+::-webkit-scrollbar{
+    width: 5px;
+    background-color: #ccc;
+}
+
+::-webkit-scrollbar-track{
+    border-radius: 10px;
+}
+
+::-webkit-scrollbar-thumb{
+    background-color: #666;
+    border-radius: 20px;
+}
